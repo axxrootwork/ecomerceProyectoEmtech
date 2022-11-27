@@ -1,0 +1,82 @@
+* {
+	background-color: #98ABB8;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #05518f;
+}
+
+nav {
+	height: 60px;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	display: inline-block;
+	padding: 18px;
+}
+
+nav ul li {
+	float: left;
+	margin-top: 20px;
+}
+
+nav ul li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 18px;
+}
+
+h2 {
+	color: rgb(228, 231, 231);
+	background-color: #31496d;
+	border: 5px dashed rgba(255, 255, 255, 0);
+	border-radius: 10px;
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+	font-size: large;
+}
+
+img.logo {
+	max-width: 100%;
+	max-height: 100%;
+	width: 50px;
+	height: 50px;
+}
+
+img.tecnologias {
+	max-width: 100%;
+	max-height: 100%;
+	width: 700px;
+	height: 200px;
+	display: block;
+	margin: auto;
+}
+
+#imagenesInternet {
+	max-width: 100%;
+	max-height: 100%;
+	width: 400px;
+	height: 400px;
+	display: block;
+	margin: auto;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	width: 400px;
+	height: 400px;
+	display: block;
+	margin: auto;
+}
