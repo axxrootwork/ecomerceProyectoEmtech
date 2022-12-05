@@ -1,82 +1,328 @@
-* {
-	background-color: #98ABB8;
-	font-family: 'Courier New', Courier, monospace;
+/*------------------------------------------------------------------*/
+/*               PARTE DE ARRIBA DE LA PAGINA                       */
+/*------------------------------------------------------------------*/
+/*Fondo de toda la pagina*/
+body {
+	background-color: rgb(14, 67, 121);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 }
-
-header {
-	background-color: #05518f;
+/*Fondo de imagen al inicio*/
+.FondoPrincipal{
+	background-image: url("./FondoPrincipal.jpg");
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 100px;
 }
-
-nav {
-	height: 60px;
+/*Texto de frase*/
+.Frase {
+	color: aliceblue;
 	text-align: center;
+	font-size: 80px;
 }
-
-nav ul {
-	list-style: none;
-	display: inline-block;
-	padding: 18px;
-}
-
-nav ul li {
-	float: left;
-	margin-top: 20px;
-}
-
-nav ul li a {
-	color: white;
-	font-weight: bold;
+/*------------------------------------------------------------------*/
+/*                    INICIO DE AREA DE HEADER                      */
+/*------------------------------------------------------------------*/
+/*Links*/
+a {
 	text-decoration: none;
-	font-size: 20px;
-	padding: 18px;
+	color: white;
 }
-
-h2 {
-	color: rgb(228, 231, 231);
-	background-color: #31496d;
-	border: 5px dashed rgba(255, 255, 255, 0);
+/* Barra de navegacion */
+header {
+	background-color: rgb(31, 100, 160);
+	min-height: 70px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+/* area de logo y titulo */
+.LogoYTitulo{
+	display: flex;
+	align-items: center;
+}
+/* Logo del portafolio */
+.logoPortafolio {
+	display: flex;
+	height: 50px;
+	margin-right: 10px;
+}
+/* links de navegacion */
+nav a {
+	font-weight: 600px;
+	padding-right: 10px;
+}
+/* Animacion al pasar por encima el puntero */
+nav a:hover{
+	color: black;
+}
+nav a:active{
+	color: rgb(245, 192, 19);
+}
+/* Ordenar elementos responsivos*/
+@media (max-width:700px){
+	header{
+		flex-direction: column;
+	}
+	nav {
+		padding: 10px 0px;
+	}
+}
+/*------------------------------------------------------------------*/
+/*                         PARTE DE BUSCADOR                        */
+/*------------------------------------------------------------------*/
+.Buscar{
+}
+/*-------------------------------------------------------------------*/
+/*                           AREA DE GRID                            */
+/*------------------------------------------------------------------ */
+/* Grid */
+.gridTecnologias{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20%;
+	grid-template-rows: auto;
+	gap: 10%;
+}
+/* Imagen de HTML */
+.imgHtml{
+	height: 100px;
+	width: 100px;
+	display: flex;
+}
+/* Imagen de CSS */
+.imgCss{
+	height: 100px;
+	width: 100px;
+	display: flex;
+}
+/* Imagen de JavaScript */
+.imgJs{
+	height: 100px;
+	width: 100px;
+	display: flex;
+}
+/* Imagen de Python */
+.imgPython{
+	height: 100px;
+	width: 100px;
+	display: flex;
+}
+/*-------------------------------------------------------------------*/
+/*                 SECCION DE NAVEGACION INICIO                      */
+/*------------------------------------------------------------------ */
+.tecnologias {
+	margin-left: 250px;
+	margin-right:  250px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align:center;
+	background-color:rgba(15, 132, 209, 0.719);
+	color: aliceblue;
+	border-radius: 20px;
+}
+/* Seccion de mejor proyecto */
+.MisProyectos {
+	margin-left: 250px;
+	margin-right:  250px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align:center;
+	background-color:rgba(15, 132, 209, 0.719);
+	color: aliceblue;
+	border-radius: 20px;
+}
+/* Seccion de los proyectos realizados */
+.ProyectosRealizados {
+	margin-left: 250px;
+	margin-right:  250px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align:justify;
+	background-color:rgba(15, 132, 209, 0.719);
+	color: aliceblue;
+	border-radius: 20px;
+}
+/* Seccion de los testimonios de los clientes */
+.TestimoniosClientes{
+	margin-left: 250px;
+	margin-right:  250px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align:center;
+	background-color:rgba(15, 132, 209, 0.719);
+	color: aliceblue;
+	border-radius: 20px;
+}
+/* Parrafos */
+p {
+	background-color: rgb(2, 47, 88);
+	margin-left: 50px;
+	margin-right:  50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	border-radius: 10px;
+	text-align: justify;	
+}
+/* Seccion del footer */
+footer {
+	text-align:justify;
+	color: aliceblue;
+	margin-left: 250px;
+	margin-right:  250px;
+	margin-top: 500px;
+	margin-bottom: 550px;
+}
+/*-------------------------------------------------------------------*/
+/*                           FORMACION                               */
+/*------------------------------------------------------------------ */
+/* Titulo de Certificaciones */
+.TitulosCertificaciones{
+	text-align: center;
+	color: aliceblue;
+	margin-left: flex;
+	margin-right:  flex;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+/* Imagen de Universidad */
+.imagenUni{
+	height: 250px;
+	width: 400px;
+	display:block;
+	margin:auto;
+}
+/*-------------------------------------------------------------------*/
+/*                           ACERCA DE MI                            */
+/*------------------------------------------------------------------ */
+/* Area de acerca de mi */
+.AcercaDeMi{
+	background-color: rgb(29, 109, 179);
+	color: aliceblue;
 	text-align: center;
 }
-
-p {
-	text-align: justify;
-	font-size: large;
-}
-
-img.logo {
-	max-width: 100%;
-	max-height: 100%;
-	width: 50px;
-	height: 50px;
-}
-
-img.tecnologias {
-	max-width: 100%;
-	max-height: 100%;
-	width: 700px;
-	height: 200px;
-	display: block;
-	margin: auto;
-}
-
-#imagenesInternet {
-	max-width: 100%;
-	max-height: 100%;
-	width: 400px;
+/* Foto de perfil */
+.fotoPerfil{
+	margin-left: 10px;
+	margin-right:  10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	height: 400px;
-	display: block;
+	width: 400px;
+	display:flex;
+	float: left;
+}
+/* Area de informacion */
+.derecha {
+	float: right;
+    width: 25%;
+}
+/*-------------------------------------------------------------------*/
+/*                           BOTONES DE FOOTER                       */
+/*------------------------------------------------------------------ */
+/* Botones de redes sociales */
+.botonesFotter{
+
+}
+/*-------------------------------------------------------------------*/
+/*                           AREA DE CONTACTO                        */
+/*------------------------------------------------------------------ */
+/* Formulario */
+form{
+	margin-left: 250px;
+	margin-right:  250px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align:center;
+	background-color:rgba(15, 132, 209, 0.719);
+	color: rgb(231, 231, 231);
+	border-radius: 3px;
+	padding: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+input, textarea{
+	border: none;
+	outline: none;
+}
+/* Titulos */
+.tContacto{
+	margin-left: 250px;
+	margin-right:  250px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align:center;
+	background-color:rgba(15, 132, 209, 0.719);
+	color: aliceblue;
+	border-radius: 20px;
+}
+.tUbicacion{
+	margin-left: 250px;
+	margin-right:  250px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align:center;
+	background-color:rgba(15, 132, 209, 0.719);
+	color: aliceblue;
+	border-radius: 20px;
+}
+.tServicio{
+	margin-left: 250px;
+	margin-right:  250px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align:center;
+	background-color:rgba(15, 132, 209, 0.719);
+	color: aliceblue;
+	border-radius: 20px;
+}
+.ServicioReq{
+	margin-left: 250px;
+	margin-right:  250px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align:center;
+	background-color:rgba(15, 132, 209, 0.719);
+	color: aliceblue;
+	border-radius: 20px;
+}
+/* MApa */
+.mapa{
+	height: 500px;
+	width: 1000px;
+	display:block;
 	margin: auto;
 }
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-	width: 400px;
-	height: 400px;
-	display: block;
+/* Video */
+.videoContacto{
+	height: 500px;
+	width: 1000px;
+	display:block;
+	margin:300px;
+}
+/* Imagen de contacto */
+.imagenContacto{
+	height: 500px;
+	width: 1000px;
+	display:block;
 	margin: auto;
+}
+/*-------------------------------------------------------------------*/
+/*                           AREA DE CONTACTO                        */
+/*------------------------------------------------------------------ */
+/* iconos */
+.iconoHome{
+	font-size: 2.5em;
+	color: aliceblue;
+	background-color: rgb(31, 100, 160);
+	min-height: 70px;
+	display:flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+.carrito{
+	font-size: 2.5em;
+	color: aliceblue;
 }
