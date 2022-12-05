@@ -58,6 +58,7 @@ nav a {
 /* Animacion al pasar por encima el puntero */
 nav a:hover{
 	color: black;
+	font-size: large;
 }
 nav a:active{
 	color: rgb(245, 192, 19);
